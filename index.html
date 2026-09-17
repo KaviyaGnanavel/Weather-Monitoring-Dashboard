@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Monitoring Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Header -->
+        <header>
+            <div>
+                <h1>Weather Monitoring Dashboard</h1>
+                <p>Real-time weather information</p>
+            </div>
+
+            <div class="date" id="date">
+                Loading...
+            </div>
+        </header>
+
+
+        <!-- Search -->
+        <section class="search-section">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button onclick="searchWeather()">
+                Search
+            </button>
+        </section>
+
+
+        <!-- Current Weather -->
+        <section class="current-weather">
+
+            <div class="location">
+                <h2 id="city">Chennai</h2>
+                <p id="condition">Partly Cloudy</p>
+            </div>
+
+            <div class="temperature">
+                <span id="temperature">29</span>°C
+            </div>
+
+            <div class="weather-icon" id="weatherIcon">
+                ☁️
+            </div>
+
+        </section>
+
+
+        <!-- Weather Cards -->
+        <section class="weather-cards">
+
+            <div class="card">
+                <h3>💧 Humidity</h3>
+                <p id="humidity">72%</p>
+            </div>
+
+            <div class="card">
+                <h3>💨 Wind Speed</h3>
+                <p id="wind">14 km/h</p>
+            </div>
+
+            <div class="card">
+                <h3>🌧️ Rain Chance</h3>
+                <p id="rain">35%</p>
+            </div>
+
+            <div class="card">
+                <h3>🌡️ Pressure</h3>
+                <p id="pressure">1012 hPa</p>
+            </div>
+
+        </section>
+
+
+        <!-- Forecast -->
+        <section class="forecast-section">
+
+            <h2>5-Day Forecast</h2>
+
+            <div class="forecast">
+
+                <div class="forecast-card">
+                    <h3>Today</h3>
+                    <div class="icon">☀️</div>
+                    <p>31°C</p>
+                    <small>Sunny</small>
+                </div>
+
+                <div class="forecast-card">
+                    <h3>Tomorrow</h3>
+                    <div class="icon">🌤️</div>
+                    <p>30°C</p>
+                    <small>Partly Cloudy</small>
+                </div>
+
+                <div class="forecast-card">
+                    <h3>Friday</h3>
+                    <div class="icon">🌧️</div>
+                    <p>28°C</p>
+                    <small>Rainy</small>
+                </div>
+
+                <div class="forecast-card">
+                    <h3>Saturday</h3>
+                    <div class="icon">⛅</div>
+                    <p>29°C</p>
+                    <small>Cloudy</small>
+                </div>
+
+                <div class="forecast-card">
+                    <h3>Sunday</h3>
+                    <div class="icon">☀️</div>
+                    <p>32°C</p>
+                    <small>Sunny</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>Weather Monitoring Dashboard © 2026</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
